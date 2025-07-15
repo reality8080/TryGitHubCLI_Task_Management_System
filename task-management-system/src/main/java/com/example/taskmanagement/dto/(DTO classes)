@@ -1,0 +1,56 @@
+package com.example.taskmanagement.dto;
+
+import java.util.Date;
+import java.util.List;
+
+public class UserDTO {
+    private Long id;
+    private String username;
+    private String email;
+    private String firstName;
+    private String lastName;
+    private List<RoleDTO> roles;
+
+    // Getters and Setters
+}
+
+public class RoleDTO {
+    private Long id;
+    private String name;
+
+    // Getters and Setters
+}
+
+public class ProjectDTO {
+    private Long id;
+    private String name;
+    private String description;
+    private Date startDate;
+    private Date endDate;
+    private String status;
+
+    // Getters and Setters
+}
+
+public class TaskDTO {
+    private Long id;
+    private String title;
+    private String description;
+    private Date dueDate;
+    private String priority;
+    private String status;
+    private Long projectId;
+    private Long assigneeId;
+
+    // Getters and Setters
+}
+
+public class CommentDTO {
+    private Long id;
+    private String content;
+    private Date timestamp;
+    private Long authorId;
+    private Long taskId;
+
+    // Getters and Setters
+}
